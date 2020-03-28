@@ -29,7 +29,7 @@ class App extends Component{
 //We get response from fetch() and convert it to response.json() which returns a promise and we need to catch it using .then() in which you can change the state using setState().
   
   componentDidMount(){
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://cors.x7.workers.dev/http://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => this.setState({monsters: users}));
   }
