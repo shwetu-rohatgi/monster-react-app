@@ -4,7 +4,7 @@ import './card-list.style.css';
 
 export const CardList = (props) => {
     return(
-    <h1 className="card-list">
+    <h2 className="card-list">
         {  
             props.monsters.map(monster => 
                 (
@@ -12,6 +12,6 @@ export const CardList = (props) => {
                 )
             ) 
         }
-    </h1>
+    </h2>
     )
 }
